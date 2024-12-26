@@ -1,0 +1,1655 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position:relative;
+    overflow: hidden;
+}
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: cadetblue;
+}
+#text h3{
+    font-size: 37px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    color: darkgreen;
+    opacity: 1;
+    position: absolute;
+    top: 14%;
+}
+#page #st{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 82%;
+    bottom: -20%;
+}
+#text h5{
+    position: absolute;
+    top: 9%;
+    background-color: #FCDA69;
+    border-top-left-radius: 45%;
+    padding: 20px;
+    border-bottom-right-radius: 45%;
+}
+#page #picc{
+    position: absolute;
+    right: 7%;
+    top: 10%;
+    border-radius: 10px solid cadetblue;
+    filter: drop-shadow(3px 3px 45px black);
+}
+#nav #logo {
+    position: absolute;
+    top: 0;
+    right: 1981px;
+    z-index: 6;
+}
+#page #nav{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0px 30px;
+ height: 8%;
+ width: 100%;
+ background-color: cadetblue;
+ position: absolute; 
+ left: 36%; 
+}
+#center-nav i{
+    position: absolute;
+    left: 53%;
+    font-size: 35px;
+    top: -28%;
+    cursor: pointer;
+    color: beige;
+}
+#center-nav i:hover{
+   color: black;
+}
+#center-nav{
+    display: flex;
+    gap: 20px;
+}
+#center-nav button{
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: 700;
+    font-size: 27px;
+    position: relative;
+    right:  -60%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    top: -26px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#center-nav button:hover {
+    animation: hover-effect 1s ease;
+    color: #2b2b2b;
+  }
+  
+  @keyframes hover-effect {
+    0% {
+      transform: translateY(0);
+      left: 60%;
+    }
+    50% {
+      transform: translateY(-10px);
+      left: 60%;
+    }
+    100% {
+      transform: translateY(0);
+      left: 60%;
+    }
+  }
+#nav input{
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: darkgreen;
+    cursor: pointer;
+    top: -15px;
+}
+#nav input:hover{
+    color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+#nav #pic{
+    position: absolute;
+    left: 5%;
+    z-index: 9;
+}
+#buttons{
+    position: absolute;
+    left: 0%;
+    bottom: 18%;
+    height: 20%;
+    width: 100%;
+    display: flex;
+}
+#buttons #button{
+    padding: 10px 22px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+}
+#buttons #b1{
+    cursor: pointer;
+    margin-left: 20px;
+    background-color: papayawhip;
+    border-radius: 30px;
+    height: 50px;
+    width: 130px;
+    font-size: 16px;
+    background-image: linear-gradient(to right, palegreen, papayawhip);
+    background-size: 200% 100%;
+    background-position: 0% 0%;
+    transition: background-position 0.3s ease;
+    position: absolute;
+    top: 114px;
+    right: 69%;
+    font-weight: 500;
+}
+#buttons #b1:hover {
+    background-position: 100% 0%;
+    box-shadow: 0px 10px 20px rgba(0.7, 0.7, 0.7, 0.7);
+    animation: zoom-in-out 1.2s infinite;
+}
+#buttons #b2{
+    cursor: pointer;
+    margin-left: 20px;
+    background-color: papayawhip;
+    border-radius: 30px;
+    height: 50px;
+    width: 130px;
+    font-size: 17px;
+    background-image: linear-gradient(to right, palegreen, papayawhip);
+    background-size: 200% 100%;
+    background-position: 0% 0%;
+    transition: background-position 0.3s ease;
+    position: absolute;
+    right: 201px;
+    top: 114px;
+    font-weight: 500;
+}
+@keyframes zoom-in-out{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+} 
+#buttons #b2:hover {
+    background-position: 100% 0%;
+    box-shadow: 0px 10px 20px rgba(0.7 , 0.7 , 0.7 , 0.7);
+    animation: zoom-in-out 1.2s infinite;
+}
+#text{
+    padding: 30px 50px;
+    position: relative;
+    top: 15%;
+    left: 5%;
+    height: 75%;
+    width: 35%;
+    background-color: cadetblue;
+}
+#text #a{
+    font-size: 75px;
+    position: absolute;
+    top: 25%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+}
+#text #rav{
+    font-size: 75px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+}
+#text #web{
+    font-size: 75px;
+    position: absolute;
+    top: 43%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+}
+#text #artist{
+    font-size: 75px;
+    position: absolute;
+    top: 43%;
+    left: 43%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+}
+#text h4{
+    margin-top: 20px;
+    color: #2b2b2b;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 250px;
+    opacity: 1;
+}
+#text h5{
+    color: black; 
+    position: absolute;
+    top: -5%;
+    left: 2%; 
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: 500;
+}
+#b1::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 5%;
+    bottom: 2%;
+    transform: translateX(-50%);
+    width: 30px; 
+    height: 30px; 
+    background-image: url("Messenger.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    z-index: 6;
+}
+#b2::before {
+    content: "";
+    position: absolute;
+    top: -23px;
+    left: 5%;
+    bottom: 2%;
+    transform: translateX(-50%);
+    width: 30px; 
+    height: 30px; 
+    background-image: url("arrow-right-up-line.png");
+    background-size: cover;
+    border-radius: 50%;
+    z-index: 6;
+}
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: burlywood;
+}
+#page1 #left{
+    position: absolute;
+    height: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    height: 100%;
+    width: 35%;
+    background-color: burlywood;
+    font-size: 22px;
+}
+#page1 #left h1{
+    position: relative;
+    bottom: -15%;
+    left: 69px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#page1 #left h4{
+    position: relative;
+    font-size: 39px;
+}
+#left .box{
+    height: 33.3%;
+    width: 100%;
+    background-color: burlywood;
+    border-top: 2px solid black;
+}
+#left .box h1{
+    position: absolute;
+}
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3vw;
+    width: 3vw;
+    background-color: #8873EF;
+    border-radius: 50%;
+    position: absolute;
+    right: 7%;
+    cursor: pointer;
+}
+.circle i{
+    color: #fff;
+}
+.circle2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3vw;
+    width: 3vw;
+    background-color: #8873EF;
+    border-radius: 50%;
+    position: absolute;
+    right: 7%;
+    cursor: pointer;
+}
+.circle2 i{
+    color: #fff;
+}
+.circle3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3vw;
+    width: 3vw;
+    background-color: #8873EF;
+    border-radius: 50%;
+    position: absolute;
+    right: 7%;
+    cursor: pointer;
+}
+.circle3 i{
+    color: #fff;
+}
+.circle:hover, .circle2:hover, .circle3:hover {
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+#text1 .ser{
+    position: absolute;
+    top: 100%;
+    left: 3.5%;
+    font-size: 1.5vw;
+    
+}
+#text1{
+    margin: 50px 50px;
+    height: 30%;
+    width: 50%;
+    position: absolute;
+    z-index: 9;
+}
+#text1 h1{
+    font-size: 58px;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#text1 h4{
+    font-size: 21px;
+    color: #2b2b2b;
+    font-weight: 400;
+    width: 70%;
+    margin-top: 67.5px;
+    position: absolute;
+    left: 9%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#page1 img{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 10%;  
+}
+#page2{
+    background-image: url("bg1.jpg");
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    opacity: 1; 
+}
+#page2 button{
+    font-size: 24px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 46.5%;
+    top: -6%;
+    border-radius: 50%;
+    background-color: bisque;
+}
+#page2 button .ri-arrow-down-line{
+    position: absolute;
+    top: 62%;
+    right: 34.5%;
+}
+#page2 button:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+#page2 .boxes {
+    position: relative;
+    right: -55%;
+    height: 240px;
+    width: 50%;
+    opacity: 1;
+    transform: translateX(-100px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+#text2 h1{
+    font-size: 73px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+#text2 h2{
+    position: absolute;
+    top: 21%;
+    color: darkolivegreen;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    left: 10%;
+    font-size: 20px;
+}
+#text2 h4{
+    position: absolute;
+    top: 36%;
+    font-size: 41px;
+    left: 10%;
+}
+#text2 .text1{
+    position: absolute;
+    left: 10%;
+}
+#text2 .ser{
+    position: absolute;
+    top: 20.65%;
+    left: 7%;
+    font-size: 23px;
+}
+#html p{
+    position: absolute;
+    top: 53%;
+    left: 13%;
+    font-size: 25px;
+}
+#css p{
+    position: absolute;
+    top: 53%;
+    left: 27%;
+    font-size: 25px;
+}
+#js p{
+    position: absolute;
+    top: 53%;
+    left: 42%;
+    font-size: 25px;
+}
+#db p{
+    position: absolute;
+    top: 73%;
+    left: 14%;
+    font-size: 25px;
+}
+#trade p{
+    position: absolute;
+    top: 73%;
+    left: 25%;
+    font-size: 25px;
+}
+#react p{
+    position: absolute;
+    top: 73%;
+    left: 40.3%;
+    font-size: 25px;
+}
+.html i{
+    position: absolute;
+    top: 48%;
+    left: 14.4%;
+    font-size: 29px;
+    cursor: pointer;
+}
+.css i{
+    position: absolute;
+    top: 48%;
+    left: 27.7%;
+    font-size: 29px;
+    cursor: pointer;
+}
+.js i{
+    position: absolute;
+    top: 48%;
+    left: 41.9%;
+    font-size: 29px;
+    cursor: pointer;
+}
+.db i{
+    position: absolute;
+    top: 67%;
+    left: 14.25%;
+    font-size: 29px;
+    cursor: pointer;
+}
+.trade i{
+    position: absolute;
+    top: 67%;
+    left: 27.6%;
+    font-size: 30px;
+    cursor: pointer;
+}
+.react i{
+    position: absolute;
+    top: 67%;
+    left: 41.9%;
+    font-size: 30px;
+    cursor: pointer;
+}
+#page2 #left .boxes{
+    position: relative;
+    right: -55%;
+    height: 240px;
+    width: 50%;
+    opacity: 1;
+}   
+#page2 #left h3{
+    position: absolute;
+    left: 6%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 47px;
+    z-index: 8;        
+}
+.time h2{
+    position: absolute;
+    font-size: 40px;
+    left: 60%;
+}
+#page2 #left .boxes::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 10%; 
+    width: 70%; 
+    height: 1px;
+    background-color: black;
+    transform: translateY(-50%);
+    border: 0.5px solid black;
+}
+#page2 #left .boxes {
+    opacity: 1;
+    transform: translateY(50px);
+}
+.boxes h2{
+    position: absolute;
+    top: 21%;
+    left: -20%;
+}
+#left h5{
+    font-size: 40px;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2b2b2b;
+}
+#page3{
+    height: 100vh;
+    width: 100vw;
+    background-color: darkgray;
+    position: relative;
+}
+#page3 .container h3{
+  position: absolute;
+  left: 2%;
+}
+#page3 h2{
+    position: absolute;
+    left: 5%;
+    font-size: 53px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: saddlebrown;
+}
+#page3 #l1{
+    position: absolute;
+    left: 29.6%;
+    top: 8%;
+}
+#page3 #l2{
+    position: absolute;
+    left: 63.6%;
+    bottom: 8.7%;
+    
+}
+.container img{
+    width: 8%;
+    position: absolute;
+    height: 26%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all ease-out 1s;
+    cursor: pointer;
+    left: 2%;
+    top: 30%;
+}
+.container2 img{
+    background-color: black;
+    position: absolute;
+    height: 24%;
+    width: 12%;
+    left: 34.2%;
+    top: 18%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all ease-out 0.5s;
+    cursor: pointer;
+}
+.container3 img{
+    position: absolute;
+    height: 22%;
+    width: 10%;
+    left: 71%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all ease-out 0.5s;
+    cursor: pointer;
+    top: 6%;
+}
+.container img:hover{
+    width: 29%;
+    height: 42%;
+}
+.container2 img:hover{
+    width: 30%;
+    height: 30%;
+    margin-top: 10px;
+}
+.container3 img:hover{
+    width: 20%;
+    height: 50%;
+    margin-left: 0px;
+}
+.container h3{
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    top: 75%;
+    left: 7%;
+}
+.container2 h3{
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    top: 60.6%;
+    left: 34.5%;
+}
+.container3 h3{
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    top: 61%;
+    left: 71%;
+}
+#contact{
+    background-color: #FCDA69;
+    height: 100vh;
+    width: 220vh;
+}
+#contact h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 54px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+#contact .con{
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#contact .mess{
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    top: 78%;
+}
+#contact .drop{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+#contact .address{
+    font-size: 20px;
+    position: absolute;
+    left: 14%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#contact .no{
+    font-size: 20px;
+    position: absolute;
+    left: 14%;
+    top: 29%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#contact .gmail{
+    font-size: 20px;
+    position: absolute;
+    left: 14%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#contact .insta{
+  font-size: 30px;
+  position: absolute;
+  left: 45%;
+  top: 89.4%;
+  cursor: pointer;
+}
+#contact .inn{
+  font-size: 30px;
+  position: absolute;
+  left: 48.5%;
+  top: 89.4%;
+  cursor: pointer;
+}
+#contact .whatsapp{
+  font-size: 30px;
+  position: absolute;
+  left: 52%;
+  top: 89.4%;
+  cursor: pointer;
+}
+#contact .insta:hover, #contact .inn:hover, #contact .whatsapp:hover {
+  animation: zoom-in-out 1.2s infinite;
+}
+#contact .Get{
+  font-size: 28px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: absolute;
+  top: 12%;
+  left: 2.3%;
+}
+#contact button{
+  cursor: pointer;
+}
+
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.col-lg-12 p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 23px;
+  position: absolute;
+  left: 35%;
+  top: 90%;
+}
+
+
+#pp_name{
+    width: 500px; 
+    height: 50px; 
+    font-size: 20px; 
+}
+#pp_email{
+    width: 500px;
+    height: 50px;
+}
+#pp_subject{
+    width: 500px;
+    height: 50px;
+}
+#pp_textarea{
+    height: 160px;
+    width: 500px;
+}
+#contact button{
+    background-color: blanchedalmond;
+    padding: 13px;
+    border-radius: 10%;
+    font-size: 20px;
+    position: absolute;
+    top: 70%;
+
+
+}
+.fl-contact-wrapper {
+    position: relative;
+    padding: 58px 0px 100px;
+    overflow: hidden;
+    background-color: var(--white-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .fl-shape8 {
+    position: absolute;
+    bottom: 4%;
+    left: -9%;
+    width: 100%;
+    display: none;
+  }
+  .container.fl-container {
+    position: relative;
+  }
+  .container{
+    box-shadow: 0px 0px 40px 0px rgba(114, 114, 144, 0.1);
+    padding: 40px;
+    margin: 30px;
+    max-height: 815px;
+    overflow: auto;
+  }
+  
+  .fl-input-padd-30 {
+    padding-bottom: 25px;
+  }
+  .mt_form_input {
+    margin-bottom: 25px;
+  }
+  .mt_form_input > label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--black-color);
+    margin: 0 !important;
+  }
+  .mt_form_input input {
+    padding: 3px 0 5px 0;
+    margin: 0;
+    border: transparent;
+    border-bottom: 1px solid #e5e5f0;
+    border-radius: 0px;
+    width: 100%;
+  }
+  
+  .mt_form_input input:focus {
+    border-bottom: 1px solid var(--yellow-color);
+  }
+  .mt_form_input input::placeholder {
+    color: #c7d1dc;
+    font-size: 14px;
+  }
+  .mt_form_input.fl-contact-textarea label {
+    width: 100%;
+  }
+  .mt_form_input.fl-contact-textarea textarea {
+    width: 100%;
+    resize: none;
+    border: transparent;
+    border-bottom: 1px solid #e5e5f0;
+    padding: 5px 0 0;
+    margin: 0;
+  }
+  .mt_form_input.fl-contact-textarea textarea:focus {
+    border-bottom: 1px solid var(--yellow-color);
+  }
+  .mt_form_input.fl-contact-textarea textarea::placeholder {
+    color: #c7d1dc;
+    font-size: 14px;
+  }
+  /* social icon */
+  
+  .fl-contact-button {
+    padding-top: 31px;
+  }
+  .fl-contact {
+    padding-top: 10px;
+  }
+  .fl-contact ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fl-contact ul li {
+    display: inline-block;
+  }
+  .fl-contact ul li {
+    display: inline-block;
+    margin: 0px 4px;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .fl-contact ul li:nth-child(1) {
+    margin: 0 10px 0 0;
+  }
+  .fl-contact ul li:nth-child(5) {
+    margin: 0 0 0 8px;
+  }
+  .fl-contact ul li:nth-child(5) a svg {
+    fill: var(--dark-blue) !important;
+  }
+  .fl-contact ul li:hover {
+    transform: translateY(-5px);
+  }
+  .fl-contact ul li:hover:nth-child(1) {
+    transform: translateY(0);
+  }
+  .fl-contact ul li a {
+    width: 47px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffeff5;
+    border-radius: 50px;
+  }
+  .fl-contact ul li a img {
+    max-width: 16px;
+    max-height: 16px;
+    object-fit: contain;
+  }
+  .fl-contact ul li a.fl-icon2 {
+    background-color: #edf3fa;
+  }
+  .fl-contact ul li a.fl-icon3 {
+    background-color: #e8f8ff;
+  }
+  .fl-contact ul li a.fl-icon4 {
+    background-color: #e5eff9;
+  }
+  .fl-contact ul li a svg {
+    height: 15px;
+  }
+  
+  /* contact information */
+  
+  .fl-contact-info-box {
+    background-color: #433a55;
+    border-radius: 10%;
+    padding: 20px;
+    height: 450px;
+    overflow: auto;
+    width: 400px;
+    position: absolute;
+    left: 55%;
+    top: 16%;
+  }
+  form.fl-form {
+    width: 100%;
+  }
+  
+  .fl-contact-info-box h2 {
+    color: var(--white-color);
+  }
+  .fl-contact-info-box .fl-contact-p {
+    padding-bottom: 23px;
+    color: var(--white-color);
+  }
+  .fl-contact-box1 {
+    position: relative;
+    background-color: var(--yellow-color);
+    margin: 0px 0px 18px;
+    padding: 25px;
+    border-radius: 10px;
+  }
+  .fl-contact-box1.fl-contact-box1-green {
+    background-color: #45be93;
+  }
+  .fl-contact-box1.fl-contact-box1-pink {
+    background-color: var(--pink-color);
+    margin: 0;
+  }
+  .fl-contact-box1 a {
+    color: var(--white-color);
+    padding-left: 25px;
+  }
+  .fl-contact-box1 a img {
+    position: absolute;
+    left: 20px;
+    top: 32px;
+    max-width: 15px;
+    max-height: 15px;
+    object-fit: contain;
+  }
+  .fl-contact-box1 p {
+    color: var(--white-color);
+    padding-left: 25px;
+    color: var(--white-color);
+  }
+  .fl-contact-box1 p img {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    max-width: 15px;
+    max-height: 15px;
+    object-fit: contain;
+  }
+  /*------------------- contact form css end -----------------*/
+  
+  /* copywrite css start */
+  
+  .fl-copywrite-wrapper {
+    position: relative;
+    background: var(--yellow-color);
+    text-align: center;
+    padding: 12px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .fl-copywrite-wrapper p {
+    color: var(--white-color);
+  }
+  .fl-bg-overlay {
+    position: fixed;
+    background: rgb(0 0 0 / 21%);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+    cursor: zoom-in;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+  }
+  .fl-shape1 {
+    display: none;
+  }
+  .fl-shape2 {
+    display: none;
+  }
+  .fl-shape3 {
+    display: none;
+  }
+  .fl-shape4 {
+    display: none;
+  }
+  .fl-shape5 {
+    display: none;
+  }
+  .fl-shape6 {
+    display: none;
+  }
+  .fl-shape7 {
+    display: none;
+  }
+  /* MEDIA QUERY START */
+
+  @media  (max-width-250){
+    #page #st p{
+      position: absolute;
+      left: 7%;
+    }
+  }
+  @media only screen and (max-width: 491px) and (max-height: 895px) {
+    /* General styles for all elements */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Specific styles for IDs */
+    #main {
+        overflow: hidden;
+    }
+
+    #page {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    #text h3 {
+        font-size: 30px; /* Adjust font size */
+        top: 10%; /* Adjust position */
+    }
+
+    #page #st {
+        font-size: 16px; /* Adjust font size */
+        left: 75%; /* Adjust position */
+        bottom: -15%; /* Adjust position */
+    }
+
+    #text h5 {
+        padding: 15px; /* Adjust padding */
+    }
+
+    #page #picc {
+        right: 5%; /* Adjust position */
+    }
+
+    #nav {
+        flex-direction: column; /* Stack navigation items */
+        height: auto; /* Adjust height */
+    }
+
+    #center-nav i {
+        font-size: 25px; /* Adjust icon size */
+    }
+
+    #buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    #buttons #b1, #buttons #b2 {
+        width: 100%; /* Full width buttons */
+        margin: 10px 0; /* Margin between buttons */
+    }
+
+    #text {
+        width: 90%; /* Adjust width */
+        padding: 20px; /* Adjust padding */
+    }
+
+    #text h4 {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    #contact {
+        width: 100%; /* Full width */
+        padding: 20px; /* Adjust padding */
+    }
+
+    #contact h4 {
+        font-size: 30px; /* Adjust font size */
+    }
+
+    #contact .con, #contact .mess, #contact .drop, #contact .address, #contact .no, #contact .gmail {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    /* Add more specific styles for other classes and IDs as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media (max-width: 1600px) {
+    .fl-banner-image {
+      position: relative;
+      left: 0;
+    }
+    .fl-banner-right {
+      padding: 175px 0px 0px 0px;
+    }
+    .fl-banner-box-bottom {
+      position: unset;
+      margin: auto;
+    }
+    img.fl-banner04 {
+      right: 0;
+    }
+  }
+  @media (max-width: 1400px) {
+    img.fl-banner01 {
+      left: 351px;
+      top: -37px;
+    }
+    .fl-resume-left-inner.fl-resume-left-inner-max {
+      max-width: 100%;
+    }
+    .fl-resume-left-inner.fl-resume-left-inner-max1 {
+      max-width: 100%;
+    }
+    .fl-resume-button p {
+      left: 40px;
+      transform: rotate(0deg);
+      top: -22px;
+    }
+    .fl-resume-button.fl-resume-button-right p {
+      background-color: var(--pink-color);
+      left: 35px;
+    }
+  }
+  @media (max-width: 1200px) {
+    /* toggle css */
+  
+    .menu-open .fl-sidebar-overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+    .menu-open .fl-menu {
+      left: 0;
+    }
+    .fl-menu {
+      position: fixed;
+      left: -220px;
+      top: 0;
+      width: 220px;
+      height: 100vh;
+      z-index: 111;
+      background-color: var(--yellow-color);
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    ul.fl-menu li {
+      width: 100%;
+      padding: 20px 0px;
+    }
+    ul.fl-menu li a {
+      color: var(--white-color);
+    }
+    /* menu-toggle */
+  
+    .fl-menu-btn {
+      margin-left: 20px;
+      display: block;
+    }
+    .fl-menu-btn span {
+      display: block;
+      width: 28px;
+      height: 2px;
+      margin-bottom: 4px;
+      -webkit-transition: all 0.3s linear 0s;
+      -moz-transition: all 0.3s linear 0s;
+      -ms-transition: all 0.3s linear 0s;
+      -o-transition: all 0.3s linear 0s;
+      transition: all 0.3s linear 0s;
+      background-color: var(--yellow-color);
+    }
+    
+    
+    /* toggle css */
+  
+    .fl-about-img-content {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  
+    .fl-contact-info-box {
+      padding: 36px 20px 40px 20px;
+      margin-top: 30px;
+    }
+    .fl-package-greenbtn-transparent p {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    .fl-package-greenbtn p {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    .fl-packages.package_01 {
+      padding: 53px 30px 43px 30px;
+    }
+  
+    .fl-res1 {
+      display: block;
+      text-align: center;
+    }
+    .fl-banner-right {
+      padding: 100px 0px 0px 0px;
+    }
+  
+  }
+  @media (max-width: 991px) {
+    .fl-menu-box {
+      position: absolute;
+      top: 0;
+    }
+    .container {
+      height: 100%;
+    }
+    .fl-about-wrapper {
+      padding: 130px 0px 35px;
+    }
+    .fl-specialized-wrapper {
+      padding: 110px 0px 120px;
+    }
+    .fl_gallery_wrapper .filters {
+      border-radius: 0;
+    }
+    .fl-client-wrapper {
+      padding: 115px 0px 40px;
+      position: relative;
+    }
+    .fl-pricing-inner {
+      padding: 0 0 30px;
+    }
+  
+    .fl-bhh-toggle {
+      position: absolute;
+      top: 39px;
+      right: 150px;
+    }
+    .fl-banner-wrapper {
+      background-image: none;
+      height: 100%;
+      background-color: #fef2e4;
+    }
+    .fl-banner-right {
+      padding: 40px 0px 0px 0px;
+      text-align: center;
+    }
+    .fl-banner-right .fl-btn-1 {
+      margin: auto;
+    }
+    .fl-all-button {
+      justify-content: center;
+    }
+    .fl-about-left h2 {
+      max-width: 100%;
+    }
+    .fl-about-left {
+      padding: 60px 0px 60px 0px;
+    }
+    .fl-about-left p {
+      max-width: 100%;
+    }
+    .res-order2 {
+      order: 2;
+    }
+    .res-order1 {
+      order: 1;
+    }
+    .fl-about-right {
+      text-align: center;
+    }
+    .fl_gallery_wrapper .filters {
+      height: auto;
+    }
+    .fl-margin-res-30 {
+      margin-bottom: 55px;
+    }
+    .fl-margin-bottom-30 {
+      margin-bottom: 30px;
+    }
+    .fl-btn-animate:before {
+      display: none;
+    }
+    img.fl-annual-arrow {
+      display: none;
+    }
+    .fl_project_gallery .fl_gallery_nav {
+      height: auto;
+      border-radius: 0;
+    }
+    .fl_project_gallery .fl_gallery_nav ul {
+      list-style: none;
+      padding: 15px 15px;
+    }
+    .container {
+      padding: 20px 17px 20px 17px;
+    }
+    form.fl-form {
+      max-width: 100%;
+    }
+    .fl-contact ul {
+      display: inline-block;
+    }
+    .fl-input-padd-30 {
+      padding-bottom: 0;
+    }
+    .f-contact-input {
+      padding-top: 25px;
+    }
+  }
+  @media (max-width: 775px) {
+    .fl-package-greenbtn {
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+    img.fl-banner01 {
+      left: 0;
+      top: 0;
+  }
+    .fl-package-greenbtn.fl-green a.fl-portfolio_btn {
+      position: absolute;
+      bottom: 12px;
+      left: 0;
+    }
+    .fl-pricing-top {
+      margin-bottom: 50px;
+    }
+    .fl-bhh-toggle {
+      position: absolute;
+      top: 42px;
+      right: 120px;
+  }
+    .fl-packages.package_01 {
+      padding: auto;
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0px 0px 40px 0px rgb(114 114 144 / 10%);
+      margin: 0 auto 80px;
+    }
+    .fl-projectFactsWrap {
+      display: block;
+      text-align: center;
+    }
+    p.fl-language-btn {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    .fl-resume-download {
+      display: inline-block;
+      text-align: center;
+    }
+    .fl-mar-30px {
+      text-align: center;
+    }
+    .fl-contact ul {
+      justify-content: flex-start;
+    }
+    .fl-resume-download p {
+      padding-bottom: 15px;
+    }
+    a.fl-language-btn.fl-download-btn {
+      margin: 0 auto;
+    }
+    .fl-resume-download p {
+      padding-right: 0;
+    }
+  }
+  @media (max-width: 580px) {
+    .fl-about-left h2 {
+      text-align: center;
+    }
+    .fl-top-40 {
+      margin-top: 40px;
+    }
+    .fl-wrapper {
+      display: block;
+    }
+    .fl-card-border {
+      margin: 0 auto;
+    }
+    .fl-card-border.fl-card-border3 {
+      margin-top: 30px;
+    }
+    .fl-card-border.fl-card-border2 {
+      margin-top: 30px;
+    }
+    .fl-card-border.fl-card-border1 {
+      margin-top: 30px;
+    }
+  
+  
+    .fl_gallery_wrapper .filter-button-group ul li {
+      display: inline-grid;
+    }
+  }
+  @media (max-width: 480px) {
+    .fl-banner-right h2 {
+      font-size: 35px;
+    }
+    .fl-banner-right h3 {
+      font-size: 30px;
+    }
+    .fl-about-img-content h3 {
+      font-size: 20px;
+    }
+    .fl-about-img-content {
+      height: 122px;
+      padding: 20px 0px 20px;
+    }
+    .fl-resume-wrapper {
+      padding: 0;
+    }
+    .fl-resume-left-box {
+      padding: 40px 0px 39px 25px;
+    }
+    .fl-resume-button {
+      padding-left: 20px;
+    }
+  
+    .fl-specialized-wrapper {
+      padding: 60px 0px 60px;
+    }
+    .fl_gallery_wrapper .filter-button-group ul {
+      padding: 20px 20px;
+    }
+    .fl-client-wrapper {
+      padding: 60px 0px 0px;
+    }
+    .fl-pricing-wrapper {
+      padding: 50px 0 0;
+    }
+    .fl-contact-wrapper {
+      padding: 28px 0px 50px;
+    }
+  
+    a.fl-btn {
+      height: 50px;
+    }
+    .fl-logo a img {
+      max-width: 162px;
+      max-height: 99px;
+      object-fit: contain;
+  }
+  .fl-bhh-toggle {
+    top: 30px;
+    right: 115px;
+  }
+  }
+  @media (max-width: 380px) {
+    .fl-contact ul li:nth-child(1) {
+      margin: 0;
+      display: block;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+    .fl-client-slider-box {
+      padding: 5px;
+    }
+    .fl-contact-info-box {
+        height: 200px;
+        width: 100px;
+        display: flex;
+    }
+  }
+
+
+
+  
+  
+  
