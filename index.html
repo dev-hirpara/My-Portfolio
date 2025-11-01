@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body class="bg-gray-900 text-white overflow-x-hidden">
+
+      <script src="script.js"></script>
+    <!-- Floating Navigation -->
+    <div class="floating-nav hidden lg:block">
+        <div class="nav-dot active" data-section="hero"></div>
+        <div class="nav-dot" data-section="about"></div>
+        <div class="nav-dot" data-section="skills"></div>
+        <div class="nav-dot" data-section="projects"></div>
+        <div class="nav-dot" data-section="timeline"></div>
+        <div class="nav-dot" data-section="contact"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-start relative overflow-hidden px-12">
+        <div class="particle-container" id="particles"></div>
+
+        <div class="text-left z-10 relative max-w-3xl">
+
+            <div class="mypf">
+                <img src="images/mypf.jpg" alt="Profile">
+            </div>
+
+            <h1 class="text-xl md:text-4xl font-bold text-shadow-glow mb-2 flex items-center gap-4">
+                <span class="wave-emoji">👋</span> Hello, I am
+            </h1>
+
+            <h2 class="text-2xl md:text-5xl font-bold text-yellow-400 mb-2">
+                Charm Hirapara
+            </h2>
+
+            <div class="text-lg md:text-2xl mb-8 h-12">
+                <span class="typing-text typing-cursor"></span>
+            </div>
+
+            <h3 class="text-lg md:text-3xl font-semibold text-pink-400 animate-fadeInUp">
+            A Ravishing Web Artist
+            </h3>
+
+            <p class="text-lg md:text-xl mb-12 max-w-xl opacity-90">
+                Creative developer passionate about building interactive experiences that push the boundaries of web
+                technology....
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-6">
+                <button onclick="scrollToSection('projects')"
+                    class="glass-morphism px-8 py-4 rounded-full font-semibold hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                    <i class="fas fa-rocket"></i>
+                    Explore My Work
+                </button>
+                <button onclick="downloadResume()"
+                    class="border-2 border-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 flex items-center gap-2">
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </button>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-2xl opacity-70"></i>
+        </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800 relative">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-5xl font-bold mb-8">
+                        About <span class="text-purple-400">Me</span>
+                    </h2>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        I'm a full-stack developer with 6+ years of experience creating digital solutions that matter.
+                        I specialize in React, Node.js, and modern web technologies, with a passion for clean code and
+                        user-centered design.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        When I'm not coding, you'll find me exploring new technologies, contributing to open source,
+                        or mentoring aspiring developers in my community.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-400 counter" data-target="20">0</div>
+                            <div class="text-sm text-gray-400">Projects Completed</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-400 counter" data-target="3">0</div>
+                            <div class="text-sm text-gray-400">Core Projects</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-green-400 counter" data-target="2">0</div>
+                            <div class="text-sm text-gray-400">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-yellow-400 counter" data-target="15">0</div>
+                            <div class="text-sm text-gray-400">Awards Won</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="glass-morphism p-8 rounded-2xl card-3d">
+                        <h3 class="text-2xl font-semibold mb-6">Quick Facts</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-map-marker-alt text-purple-400"></i>
+                                <span>Surat , Gujarat</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-graduation-cap text-blue-400"></i>
+                                <span>Rai University, Ahmedabad</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-coffee text-yellow-400"></i>
+                                <span>Code with Coffee Enthusiast ☕</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-gamepad text-green-400"></i>
+                                <span>Gamer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center mb-16">
+                My <span class="text-purple-400">Skills</span>
+            </h2>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center skill-item">
+                    <div class="skill-circle mx-auto mb-4">
+                        <svg width="120" height="120">
+                            <circle cx="60" cy="60" r="50" stroke="#374151" stroke-width="8" fill="none" />
+                            <circle cx="60" cy="60" r="50" stroke="#667eea" stroke-width="8" fill="none"
+                                class="progress" data-percent="90" />
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-2xl font-bold">90%</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">React/Next.js</h3>
+                    <p class="text-gray-400">Frontend Framework</p>
+                </div>
+
+                <div class="text-center skill-item">
+                    <div class="skill-circle mx-auto mb-4">
+                        <svg width="120" height="120">
+                            <circle cx="60" cy="60" r="50" stroke="#374151" stroke-width="8" fill="none" />
+                            <circle cx="60" cy="60" r="50" stroke="#10b981" stroke-width="8" fill="none"
+                                class="progress" data-percent="85" />
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-2xl font-bold">85%</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Node.js</h3>
+                    <p class="text-gray-400">Backend Development</p>
+                </div>
+
+                <div class="text-center skill-item">
+                    <div class="skill-circle mx-auto mb-4">
+                        <svg width="120" height="120">
+                            <circle cx="60" cy="60" r="50" stroke="#374151" stroke-width="8" fill="none" />
+                            <circle cx="60" cy="60" r="50" stroke="#f59e0b" stroke-width="8" fill="none"
+                                class="progress" data-percent="80" />
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-2xl font-bold">80%</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Python</h3>
+                    <p class="text-gray-400">Data & AI</p>
+                </div>
+
+                <div class="text-center skill-item">
+                    <div class="skill-circle mx-auto mb-4">
+                        <svg width="120" height="120">
+                            <circle cx="60" cy="60" r="50" stroke="#374151" stroke-width="8" fill="none" />
+                            <circle cx="60" cy="60" r="50" stroke="#ef4444" stroke-width="8" fill="none"
+                                class="progress" data-percent="75" />
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-2xl font-bold">75%</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">AWS/DevOps</h3>
+                    <p class="text-gray-400">Cloud Infrastructure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center mb-16">
+                Featured <span class="text-purple-400">Projects</span>
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <div class="project-inner">
+                        <div
+                            class="project-front bg-gradient-to-br from-purple-600 to-blue-600 p-6 flex flex-col justify-center items-center">
+                            <a href=""></a>
+                            <i class="fas fa-shopping-cart text-6xl mb-4"></i>
+                            <h3 class="text-2xl font-bold">E-Commerce Platform</h3>
+                            <p class="text-center mt-4">Full-stack marketplace with recommendations</p>
+                        </div>
+                        <div class="project-back bg-gray-700 p-6 flex flex-col justify-center">
+                            <h3 class="text-xl font-bold mb-4">Tech Stack:</h3>
+                            <ul class="space-y-2 mb-6">
+                                <li>• React & Redux</li>
+                                <li>• Node.js & Express</li>
+                                <li>• MongoDB</li>
+                                <li>• Stripe Integration</li>
+                            </ul>
+                            <div class="flex gap-4">
+                                <a href="https://e-commerce-internship.netlify.app/" class="flex-1 bg-purple-600 py-2 rounded hover:bg-purple-700 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                                </a>
+                                <button class="flex-1 bg-gray-600 py-2 rounded hover:bg-gray-500 transition-colors">
+                                    <i class="fab fa-github mr-2"></i>Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-inner">
+                        <div
+                            class="project-front bg-gradient-to-br from-green-600 to-teal-600 p-6 flex flex-col justify-center items-center">
+                            <i class="fas fa-chart-line text-6xl mb-4"></i>
+                            <h3 class="text-2xl font-bold">Analytics Dashboard</h3>
+                            <p class="text-center mt-4">Real-time data visualization platform</p>
+                        </div>
+                        <div class="project-back bg-gray-700 p-6 flex flex-col justify-center">
+                            <h3 class="text-xl font-bold mb-4">Tech Stack:</h3>
+                            <ul class="space-y-2 mb-6">
+                                <li>• Next.js & TypeScript</li>
+                                <li>• D3.js & Chart.js</li>
+                                <li>• PostgreSQL</li>
+                                <li>• WebSocket</li>
+                            </ul>
+                            <div class="flex gap-4">
+                                <button class="flex-1 bg-green-600 py-2 rounded hover:bg-green-700 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                                </button>
+                                <button class="flex-1 bg-gray-600 py-2 rounded hover:bg-gray-500 transition-colors">
+                                    <i class="fab fa-github mr-2"></i>Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-inner">
+                        <div
+                            class="project-front bg-gradient-to-br from-pink-600 to-red-600 p-6 flex flex-col justify-center items-center">
+                            <i class="fas fa-mobile-alt text-6xl mb-4"></i>
+                            <h3 class="text-2xl font-bold">LinkedIn App</h3>
+                            <p class="text-center mt-4">Cross-platform social networking solution</p>
+                        </div>
+                        <div class="project-back bg-gray-700 p-6 flex flex-col justify-center">
+                            <h3 class="text-xl font-bold mb-4">Tech Stack:</h3>
+                            <ul class="space-y-2 mb-6">
+                                <li>• React Native</li>
+                                <li>• Firebase</li>
+                                <li>• Redux Toolkit</li>
+                                <li>• Push Notifications</li>
+                            </ul>
+                            <div class="flex gap-4">
+                                <a href="https://linkify-hub.netlify.app" class="flex-1 bg-pink-600 py-2 rounded hover:bg-pink-700 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                                </a>
+                                <button class="flex-1 bg-gray-600 py-2 rounded hover:bg-gray-500 transition-colors">
+                                    <i class="fab fa-github mr-2"></i>Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="py-20 bg-gray-900">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center mb-16">
+                My <span class="text-purple-400">Journey</span>
+            </h2>
+
+            <div class="relative">
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-purple-400"></div>
+
+                <div class="timeline-item mb-12">
+                    <div class="flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <h3 class="text-xl font-bold">Senior Full Stack Developer</h3>
+                            <p class="text-purple-400">Intern at CodTech</p>
+                            <p class="text-gray-400">2025 - Present</p>
+                        </div>
+                        <div class="w-4 h-4 bg-purple-400 rounded-full relative z-10"></div>
+                        <div class="w-1/2 pl-8">
+                            <p class="text-gray-300">Leading a team of 8 developers, architecting scalable solutions for
+                                enterprise.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item mb-12">
+                    <div class="flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <p class="text-gray-300">Built and launched 2 production websites</p>
+                        </div>
+                        <div class="w-4 h-4 bg-blue-400 rounded-full relative z-10"></div>
+                        <div class="w-1/2 pl-8">
+                            <h3 class="text-xl font-bold">Full Stack Developer</h3>
+                            <p class="text-blue-400">Intern at CodVeda Technologies</p>
+                            <p class="text-gray-400">July-September 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item mb-12">
+                    <div class="flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <h3 class="text-xl font-bold">Learned Web Development</h3>
+                            <p class="text-green-400">From Sheryians</p>
+                            <p class="text-gray-400">2023 - 2025</p>
+                        </div>
+                        <div class="w-4 h-4 bg-green-400 rounded-full relative z-10"></div>
+                        <div class="w-1/2 pl-8">
+                            <p class="text-gray-300">Specialized in React development, created responsive designs and Mainly Backend Technologies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center mb-16">
+                Get In <span class="text-purple-400">Touch</span>
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="glass-morphism p-6 rounded-xl">
+                        <h3 class="text-2xl font-bold mb-6">Let's Connect!</h3>
+                        <p class="text-gray-300 mb-6">
+                            I'm always excited to work on new projects and collaborate with amazing people.
+                            Drop me a message and let's create something awesome together!
+                        </p>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-envelope text-purple-400 text-xl"></i>
+                                <span>devhirpara9999@email.com</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-phone text-blue-400 text-xl"></i>
+                                <span>+91 7874476607</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-map-marker-alt text-green-400 text-xl"></i>
+                                <span>Kamrej , Surat</span>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 mt-8">
+                            <a href="https://github.com/dev-hirpara"
+                                class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition-colors">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/charm-hirapara-76b117271/"
+                                class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#"
+                                class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors">
+                                <i class="fab fa-intagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-morphism p-6 rounded-xl">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <input type="text" placeholder="Your Name" required
+                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:border-purple-400 focus:outline-none transition-colors">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" required
+                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:border-purple-400 focus:outline-none transition-colors">
+                        </div>
+                        <div>
+                            <textarea placeholder="Your Message" rows="5" required
+                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:border-purple-400 focus:outline-none transition-colors resize-none"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-gradient-to-r from-purple-600 to-blue-600 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
