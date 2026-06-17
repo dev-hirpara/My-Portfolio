@@ -1,7 +1,7 @@
   // Typing Animation
         const typingTexts = [
-            "MERN Stack Developer",
-            "DevOps Engineer"
+            "Automobile Engineer",
+            "Manufacturing Enthusiast",
         ];
 
         let textIndex = 0;
@@ -117,40 +117,13 @@
 
         // Download Resume
         function downloadResume() {
-            // Create a sample resume content
-            const resumeContent = `
-Sarah Chen - Full Stack Developer
-
-Contact Information:
-Email: sarah.chen@email.com
-Phone: +1 (555) 123-4567
-Location: San Francisco, CA
-
-Experience:
-- Senior Full Stack Developer at TechCorp Inc. (2022 - Present)
-- Full Stack Developer at StartupXYZ (2020 - 2022)
-- Frontend Developer at WebAgency Pro (2018 - 2020)
-
-Skills:
-- React/Next.js (90%)
-- Node.js (85%)
-- Python (80%)
-- AWS/DevOps (75%)
-
-Education:
-MS Computer Science, Stanford University
-            `;
-
-            const blob = new Blob([resumeContent], { type: 'text/plain' });
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'Sarah_Chen_Resume.txt';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            window.URL.revokeObjectURL(url);
-        }
+    const a = document.createElement('a');
+    a.href = 'Jeel resume for outside.pdf';
+    a.download = 'Jeel_Hirpara_Resume.pdf';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}     
 
         // Intersection Observer
         const observerOptions = {
